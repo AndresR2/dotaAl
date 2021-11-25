@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-text color="danger"> 
+      <ion-title>Heroes</ion-title>
+    </ion-text>  
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+<ion-grid>
+  <ion-row>
+    <ion-col *ngFor="let item of heroes?.results">
+      <ion-list>
+        <ion-item>
+          <button>{{item.id}}-{{item.localized_name}}</button>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-grid>  
+</ion-content>
+
+
